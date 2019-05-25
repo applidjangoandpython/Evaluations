@@ -1,0 +1,27 @@
+{% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+
+{% block content %}
+<h3>Les formulaires <a class="btn btn-default btn-success" href="{% url 'evaluations:creation_formulaire' %}">Ajouter</a></h3>
+
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>Titre</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+  {% for formulaire in object_list %}
+<tr>
+  <td>{{ formulaire.titre }}</td>
+  <td>
+    <a class="btn btn-primary" href="{% url 'evaluations:formulaire' formulaire.pk %}">Consulter</a>
+    <a class="btn btn-default" href="{% url "evaluations:edition_formulaire" formulaire.pk %}">Modifier</a>
+  </td>
+</tr>
+  {% endfor %}
+</tbody>
+</table>
+{% endblock %}

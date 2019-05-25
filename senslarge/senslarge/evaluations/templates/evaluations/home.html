@@ -1,0 +1,17 @@
+{% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+{% load static %}
+
+{% block content %}
+
+<p class="text-center">
+<img src="{% static 'logo.png' %}" />
+</p>
+
+<h3 class="text-center">Interface de gestion</h3>
+<p class="text-center">
+<a href="{% url 'evaluations:liste_formulaire' %}" class="btn btn-primary btn-lg">Formulaires</a>
+<a href="{% url 'evaluations:liste_repondant' %}" class="btn btn-success btn-lg">Répondants</a>
+</p>
+{% endblock %}

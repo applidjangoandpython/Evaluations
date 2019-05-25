@@ -1,0 +1,7 @@
+Bonjour {{ object.first_name }} {{ object.last_name }}
+
+Dans le cadre de notre processus d'évaluation, nous avons le plaisir de vous inviter à répondre à nos questionnaires en ligne.
+
+Vous pourrez choisir le moment le plus approprié pour vous pour passer ces tests.
+
+Pour accéder aux questionnaires, copiez le lien {{ url }} dans votre navigateur

@@ -1,0 +1,250 @@
+{% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+{% load static %}
+{% load fontawesome %}
+
+{% block content %}
+<style>
+@media print{
+  .h1, h1 {
+    font-size: 18px;
+  }
+  .h2, h2 {
+    font-size: 15px;
+  }
+  .h3, h3 {
+    font-size: 12px;
+  }
+  .h1, .h2, .h3, h1, h2, h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+  }
+  body {
+    font-size: 10px;
+  }
+  ol, ul {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+</style>
+
+
+<h1>
+  {{formulaire.titre}} : {{utilisateur.username}}
+  <a class="btn btn-default pull-right hidden-print" href="{% url 'evaluations:creation_pdf' formulaire_pk=formulaire.pk user_pk=utilisateur.pk %}">
+    PDF
+  </a>
+</h1>
+
+{% if formulaire.titre != "Style de comportement" %}
+<h2>Détail des réponses</h2>
+
+{% for question in formulaire.questions.all %}
+<h3> {{question.question_text}}</h3>
+      <ul>
+  {% for choice in question.choices.all %}
+    {% for choice_user in choice.choiceusers.all %}
+        {% if formulaire.type_form == formulaire.POND %}
+          <li>
+            {{choice_user.reference_choice.choice_text}}&nbsp;: <span>{{choice_user.valeur_entier}}</span>
+          </li>
+        {% else %}
+          {% for choice in choice_user.reference_choice.question.choices.all %}
+            <li>
+            {% if choice == choice_user.reference_choice %}
+                {% fontawesome_icon 'check-square-o' %}
+            {% else %}
+                {% fontawesome_icon 'square-o' %}
+            {% endif %}
+            {{choice.choice_text}}
+            </li>
+          {% endfor %}
+        {% endif %}
+    {% endfor %}
+  {% endfor %}
+      </ul>
+{% endfor %}
+
+<h2>Résumé par catégorie</h2>
+<table class="table table-border">
+<thead>
+<tr>
+  <th></th>
+  {% for categorie in form_user.header %}
+  <th class="text-center">{{ categorie }}</th>
+  {% endfor %}
+</tr>
+</thead>
+<tbody>
+{% for question, choices in form_user.rows %}
+<tr>
+  <td>{{ question.question_text }}</td>
+  {% for choice in choices %}
+  <td class="text-center">
+    {% if formulaire.type_form == formulaire.POND %}
+      {{ choice.valeur_entier}}
+    {% else %}
+      {% if choice.1 %}
+      {% fontawesome_icon 'check-square-o' %}
+      {% else %}
+      {% fontawesome_icon 'square-o' %}
+      {% endif %}
+      <br/>
+      {{ choice.0.valorisation }}
+    {% endif %}
+  </td>
+  {% endfor %}
+</tr>
+{% endfor %}
+<tr>
+  <th class="text-right">{% if formulaire.type_form != formulaire.POND %}Nombre{% endif %}</th>
+  {% for cell in form_user.footer %}
+  <th class="text-center">{{ cell }}</th>
+  {% endfor %}
+</tr>
+{% if formulaire.type_form != formulaire.POND %}
+<tr>
+  <th class="text-right">Somme</th>
+  {% for cell in form_user.footer_select_val_sum %}
+  <th class="text-center">{{ cell }}</th>
+  {% endfor %}
+</tr>
+<tr>
+  <th class="text-right">Performance</th>
+  <th colspan="4" class="text-center">{{ form_user.performance }} / 36</th>
+</tr>
+{% endif %}
+</tbody>
+</table>
+{% else %}
+<h2>Résumé par catégorie</h2>
+<table class="table table-border">
+<thead>
+<tr>
+  {% for categorie in form_user.header %}
+  <th></th>
+  <th class="text-center">{{ categorie }}</th>
+  {% endfor %}
+</tr>
+</thead>
+<tbody>
+{% for question, choices in form_user.rows %}
+<tr>
+  {% for choice in choices %}
+  <td class="text-right">
+    {{choice.reference_choice.choice_text}}
+  </td>
+  <td class="text-center">
+    {{ choice.valeur_entier}}
+  </td>
+  {% endfor %}
+</tr>
+{% endfor %}
+<tr>
+  {% for cell in form_user.footer %}
+  <th></th>
+  <th class="text-center">{{ cell }}</th>
+  {% endfor %}
+</tr>
+</tbody>
+</table>
+{% endif %}
+
+<div class="graph">
+  {% if formulaire.titre == "Style de comportement" %}
+    <h2>Interprétation graphique des choix</h2>
+    <div class="legend text-center square" >
+        <div class="line">
+          <div class="category">
+            D (dominant) <br /> Centré resultat<br>{{categorie.2}}
+          </div>
+          <div class="category">
+            I (influent)<br />Entraineur de groupe<br>{{categorie.3}}
+          </div>
+        </div>
+        <div class="line">
+          <div class="category">
+            {{categorie.0}}<br />C(consciencieux) <br />Analytique
+          </div>
+          <div class="category">
+            {{categorie.1}}<br />S(stable)<br />Relationnel individuel
+          </div>
+        </div>
+    </div>
+      <object class="pygal square" type="image/svg+xml" data="{% url 'evaluations:graphe' formulaire_pk=formulaire.pk user_pk=utilisateur.pk %}" ></object>
+
+  {% elif formulaire.titre == "Approche systemique" %}
+
+  <h2>Interprétation graphique des choix</h2>
+    <object class="pygal" type="image/svg+xml" data="{% url 'evaluations:graphe_s' formulaire_pk=formulaire.pk user_pk=utilisateur.pk %}" ></object>
+
+  {% elif formulaire.titre == "Approche gagnant-gagnant" %}
+
+  <h2>Interprétation graphique des choix</h2>
+
+    <div class="legend text-center square">
+        <div class="line">
+          <div class="category">
+            -+ <br/> P/G Soumission
+          </div>
+          <div class="category">
+            ++ <br/> G/G Coopération
+          </div>
+        </div>
+        <div class="line">
+          <div class="category">
+            -- <br/> P/P Démission
+          </div>
+          <div class="category">
+            +- <br/> G/P Domination
+          </div>
+        </div>
+    </div>
+      <object class="pygal square" type="image/svg+xml" data="{% url 'evaluations:graphe_g' user_pk=utilisateur.pk formulaire_pk=formulaire.pk %}" ></object>
+  {% endif %}
+</div>
+
+<style>
+.graph {
+  width:532px;
+  background:white;
+  overflow-wrap:normal;
+  height: 403px;
+  position: relative;
+}
+.legend{
+  width:532px;
+  height: 403px;
+  overflow-wrap:normal;
+  position: absolute;
+  z-index: 1;
+}
+.pygal{
+  width:532px;
+  height: 403px;
+}
+
+.square{
+  height: 532px;
+}
+
+.line:first-of-type{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.line:last-of-type{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.category{
+  width: 50%;
+  float: left;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+
+{% block content %}
+<h1>Modification de catégorie</h1>
+
+<p><a class="btn btn-default" href="{% url "evaluations:formulaire" pk=object.formulaire.pk %}">Retour</a></p>
+
+<form method="POST" class="form-horizontal">
+  {% csrf_token %}
+  {% bootstrap_form form layout='horizontal' %}
+  {% bootstrap_button "Modifier" button_type="submit" button_class="btn btn-success btn-lg pull-right" %}
+</form>
+{% endblock %}

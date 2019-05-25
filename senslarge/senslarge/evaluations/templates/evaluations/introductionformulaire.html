@@ -1,0 +1,36 @@
+ {% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+{% load static %}
+
+{% block content %}
+
+<div class="row col-md-6 col-md-offset-3 text-center">
+
+<img src="{% static 'logo.png' %}" />
+
+<h3>
+    Evaluation Sens Large
+</h3>
+
+{% if object_list.count == 0%}
+<p>
+    Vous avez rempli tous les formulaires demandés
+</p>
+
+{% else %}
+
+<p>
+  Ci-dessous, {% if object_list.count == 1%}le formulaire{% else %}les formulaires{% endif %} à remplir.<br />
+  Vous êtes libre de commencer par celui que vous voulez :
+</p>
+
+{% for formulaire in object_list %}
+  <p class="clearfix">{{ formulaire.titre }}
+    <a href="{% url 'evaluations:repondre_question' formulaire_pk=formulaire.pk question_pk=formulaire.questions.first.pk %}" class="btn btn-primary pull-right">Répondre</a>
+  </p>
+{% endfor %}
+{% endif %}
+</div>
+
+{% endblock %}

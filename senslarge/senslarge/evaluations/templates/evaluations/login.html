@@ -1,0 +1,19 @@
+{% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+{% load static %}
+
+{% block content %}
+
+<div class="row col-md-8 col-md-offset-2">
+<p class="text-center">
+  <img src="{% static "logo.png" %}" />
+</p>
+<form method="POST" class="form-horizontal">{% csrf_token %}
+ {% bootstrap_form form layout='horizontal' %}
+<p class="text-center"><a href="{% url 'evaluations:password_reset' %}">Réinitialisation du mot de passe</a></p>
+ {% bootstrap_button "Se connecter" button_type="submit" button_class="btn btn-success btn-lg pull-right" %}
+</form>
+</div>
+
+{% endblock %}

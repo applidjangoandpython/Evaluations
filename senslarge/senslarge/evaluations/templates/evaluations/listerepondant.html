@@ -1,0 +1,34 @@
+{% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+
+{% block content %}
+<h1> Liste des répondants</h1>
+<p>
+  <a href="{% url 'evaluations:creation_repondant' %}" class="btn btn-success">Ajouter un répondant</a>
+</p>
+
+<table class="table table-hover">
+{% for user in object_list %}
+<tr>
+  <td>
+  {% if user.username %}
+    {{user.username}}
+  {% else%}
+    {{user.first_name}} {{user.last_name}}
+  {% endif %}
+  </td>
+  <td>
+     {% for formul in user.formulaires.formul.all %}
+       <a href="{% url 'evaluations:repondant' formulaire_pk=formul.pk user_pk=user.pk %}">
+         {{ formul.titre }}
+       </a>
+     {% endfor %}
+  </td>
+  <td>
+    <a  class="btn btn-primary" href="{% url 'evaluations:edition_repondant' pk=user.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+  </td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

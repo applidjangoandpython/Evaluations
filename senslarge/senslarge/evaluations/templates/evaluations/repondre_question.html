@@ -1,0 +1,15 @@
+{% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+
+{% block content %}
+<h1>{{question.formulaire.titre}}</h1>
+<p class="lead">{{ question.formulaire.introduction }}</p>
+<h2>{{ question.question_text }}</h2>
+<form action="" method="POST">{% csrf_token %}
+
+  {% bootstrap_form form %}
+
+  {% bootstrap_button "Suivant" button_type="submit" button_class="btn btn-success btn-lg pull-right" %}
+</form>
+{% endblock %}

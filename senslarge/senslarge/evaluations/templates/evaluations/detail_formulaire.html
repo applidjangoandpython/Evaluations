@@ -1,0 +1,82 @@
+{% extends 'evaluations/base.html' %}
+
+{% load bootstrap3 %}
+
+{% block content %}
+
+<h1>{{ formulaire.titre}}</h1>
+
+<p>
+    <a class="btn btn-default" href="{% url "evaluations:liste_formulaire" %}">Retour</a>
+    <a class="btn btn-primary" href="{% url "evaluations:edition_formulaire" formulaire.pk %}">Modifier</a>
+</p>
+
+<h2>Formulaire</h2>
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Introduction</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">{{ formulaire.introduction }}</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Type</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">{{ formulaire.get_type_form_display }}</p>
+    </div>
+  </div>
+  {% if formulaire.type_form == formulaire.POND %}
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Nombre de points</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">{{ formulaire.nb_points }}</p>
+    </div>
+  </div>
+  {% endif %}
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Graphique</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">{{ formulaire.get_typegraphe_display }}</p>
+    </div>
+  </div>
+</form>
+
+<h2>Catégories</h2>
+<p>
+  <a href="{% url 'evaluations:creation_categorie' formulaire_pk=formulaire.pk %}"class="btn btn-success">Créer</a>
+</p>
+
+<table class="table table-hover">
+{% for category in formulaire.categories.all %}
+<tr>
+  <td>{{ category.categorie_text }}</td>
+  <td><a class="btn btn-default pull-right" href="{% url 'evaluations:edition_categorie' formulaire_pk=formulaire.pk pk=category.pk %}">Modifier</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<h2>Questions</h2>
+
+<p>
+  <a href="{% url 'evaluations:creation_question' formulaire_pk=formulaire.pk %}" class="btn btn-success">Créer</a>
+</p>
+
+{% for question in formulaire.questions.all %}
+  <h3>{{ question.question_text}} <a class="btn btn-primary btn-sm" href="{% url 'evaluations:edition_question' formulaire_pk=formulaire.pk pk=question.pk %}">Modifier</a></h3>
+
+<table class="table table-hover">
+{% for choice in question.choices.all %}
+<tr>
+    <td>{{ choice.choice_text}}</td>
+    <td class="text-center"><span class="label label-info">{{ choice.categorie.categorie_text}}</span></td>
+    <td><a href="{% url 'evaluations:edition_choice' formulaire_pk=formulaire.pk question_pk=question.pk choice_pk=choice.pk %}" class="btn btn-default btn-sm pull-right">Modifier</a></td>
+</tr>
+{% endfor %}
+<tr>
+  <td colspan="3"><a href="{% url 'evaluations:creation_choice' formulaire_pk=formulaire.pk question_pk=question.pk %}" class="btn btn-success btn-sm">Ajouter un choix</a></td>
+</tr>
+</table>
+{% endfor %}
+
+{% endblock %}

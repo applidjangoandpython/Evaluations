@@ -1,0 +1,2276 @@
+[
+  {
+    "model": "evaluations.formulaire",
+    "pk": 6,
+    "fields": {
+      "titre": "Approche gagnant-gagnant",
+      "introduction": "Pour chacun des 8 ensembles suivants, répartissez 10 points (en 4 nombres entiers de 0 à 10) entre les 4 affirmations proposées, en fonction de la fréquence avec laquelle VOUS pensez agir ainsi.",
+      "type_form": "PONDERATION",
+      "nb_points": 10,
+      "typegraphe": "radar"
+    }
+  },
+  {
+    "model": "evaluations.formulaire",
+    "pk": 41,
+    "fields": {
+      "titre": "Les styles de management",
+      "introduction": "À la lecture de chacune des situations suivantes, choisissez parmi les quatre actions possibles celle qui se rapproche le plus de ce que vous auriez fait dans cette situation, et entourez votre réponse.",
+      "type_form": "SELECTION_VALORISATION",
+      "nb_points": 0,
+      "typegraphe": "barres"
+    }
+  },
+  {
+    "model": "evaluations.formulaire",
+    "pk": 42,
+    "fields": {
+      "titre": "Approche systemique",
+      "introduction": "Imaginez que vous vivez les situations décrites ci après. Quelles seraient vos pensées spontanées ? Répartissez 25 points sur les 5 pensées de chaque rubrique. (0 à 25)",
+      "type_form": "PONDERATION",
+      "nb_points": 25,
+      "typegraphe": "radar"
+    }
+  },
+  {
+    "model": "evaluations.formulaire",
+    "pk": 43,
+    "fields": {
+      "titre": "Style de comportement",
+      "introduction": "Pour chacun des 8 ensembles suivants, répartissez 10 points (en 4 nombres entiers de 0 à 10) entre les 4 affirmations proposées, en fonction de la fréquence avec laquelle VOUS pensez agir ainsi.",
+      "type_form": "PONDERATION",
+      "nb_points": 10,
+      "typegraphe": "radar"
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 22,
+    "fields": {
+      "categorie_text": "Directif",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 23,
+    "fields": {
+      "categorie_text": "Incitatif",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 24,
+    "fields": {
+      "categorie_text": "Participatif",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 25,
+    "fields": {
+      "categorie_text": "Délégatif",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 26,
+    "fields": {
+      "categorie_text": "Analytique",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 27,
+    "fields": {
+      "categorie_text": "Relationnel individuel",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 28,
+    "fields": {
+      "categorie_text": "Entraineur de groupe",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 29,
+    "fields": {
+      "categorie_text": "Centré résultat",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 32,
+    "fields": {
+      "categorie_text": "++",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 33,
+    "fields": {
+      "categorie_text": "+-",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 34,
+    "fields": {
+      "categorie_text": "--",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 35,
+    "fields": {
+      "categorie_text": "-+",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 38,
+    "fields": {
+      "categorie_text": "Psychologique",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 39,
+    "fields": {
+      "categorie_text": "Normalisante",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 40,
+    "fields": {
+      "categorie_text": "Magique",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 41,
+    "fields": {
+      "categorie_text": "Rationnelle",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 42,
+    "fields": {
+      "categorie_text": "Systémique",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.categorie",
+    "pk": 43,
+    "fields": {
+      "categorie_text": "",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 33,
+    "fields": {
+      "choice_text": "Je lui rappelle ses réussites précédentes, lui suggère de suivre le mode de résolution de problèmes habituel et sollicite ses idées sur la façon de le mettre en oeuvre cette fois-ci",
+      "question": 28,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 55,
+    "fields": {
+      "choice_text": "En lui signifiant ses résultats, je lui rappelle que le travail en équipe est une nécessité et lui montre ce qu'il doit faire pour mieux s'intégrer dans l'équipe",
+      "question": 27,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 56,
+    "fields": {
+      "choice_text": "En lui rappelant ses resultats, je lui signifie que je suis disponible pour parler de la situation et attend ses suggestions pour l'améliorer",
+      "question": 27,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 57,
+    "fields": {
+      "choice_text": "En m'appuyant sur ses resultats, je lui souligne les avantages du travail d'équipe ainsi que les modes de travail en équipe, et lui demande de faire des suggestions pour faciliter son intégration dans",
+      "question": 27,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 58,
+    "fields": {
+      "choice_text": "Je lui fais savoir que je suis au courant des ses résultats et le laisse décider de la correction de trajectoire",
+      "question": 27,
+      "categorie": 24,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 59,
+    "fields": {
+      "choice_text": "Je le laisse décider du mode de résolution du problème",
+      "question": 28,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 60,
+    "fields": {
+      "choice_text": "Je l'encourage à déterminer le mode de résolution du problème et l'assure de mon soutien dans sa décision",
+      "question": 28,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 61,
+    "fields": {
+      "choice_text": "Je lui montre comment résoudre le problème et lui demande de l'appliquer",
+      "question": 28,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 62,
+    "fields": {
+      "choice_text": "Je lui rappelle ses succès passés, et lui suggère de suivre la methode qu'il a déja appliquée pour résoudre le problème.",
+      "question": 30,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 63,
+    "fields": {
+      "choice_text": "Je n'interviens pas et le laisse décider seul de la solution",
+      "question": 30,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 64,
+    "fields": {
+      "choice_text": "Je prends les choses en main et lui montre comment résoudre le problème",
+      "question": 30,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 65,
+    "fields": {
+      "choice_text": "Je reconnais son hésitation mais l'entourage cependant à me proposer lui-même un mon de résoudre du problème",
+      "question": 30,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 66,
+    "fields": {
+      "choice_text": "Je définis moi-même les changements et m'assure de leur mise en oeuvre",
+      "question": 29,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 67,
+    "fields": {
+      "choice_text": "Je retiens les idées de mon collaborateur et suis leur mise en oeuvre",
+      "question": 29,
+      "categorie": 24,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 68,
+    "fields": {
+      "choice_text": "Je lui demande de me faire d'autres propositions de mise en oeuvre, et nous choisissons ensemble celle qui nous semble la plus pertinente",
+      "question": 29,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 69,
+    "fields": {
+      "choice_text": "Je lui suggère mes idées de changements et lui demande de les commenter",
+      "question": 29,
+      "categorie": 24,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 75,
+    "fields": {
+      "choice_text": "Je sollicite auprès de mon collaborateur des suggestions pour accomplir le travail",
+      "question": 45,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 76,
+    "fields": {
+      "choice_text": "Je lui dis quel est le probleme et comment il doit être résolu",
+      "question": 45,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 77,
+    "fields": {
+      "choice_text": "Je laisse déterminer ses propres orientations pour accomplir le travail",
+      "question": 45,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 78,
+    "fields": {
+      "choice_text": "Je dirige le mode de traitement du travail, tout en tenant compte de ses recommandations",
+      "question": 45,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 109,
+    "fields": {
+      "choice_text": "Je laisse à mon collaborateur une grande marge de manoeuvre",
+      "question": 31,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 110,
+    "fields": {
+      "choice_text": "Je discute de la situation avec lui et je propose la marche à suivre",
+      "question": 31,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 111,
+    "fields": {
+      "choice_text": "Je prends les mesures necéssaires pour être sûr que la tâche sera bien accomplie comme je l'entends par mon collaborateur",
+      "question": 31,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 112,
+    "fields": {
+      "choice_text": "J'analyse la situation avec lui et suggère qu'il propose la marche à suivre",
+      "question": 31,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 113,
+    "fields": {
+      "choice_text": "Je laisse le groupe trouver son rythme",
+      "question": 32,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 114,
+    "fields": {
+      "choice_text": "Je pousse le groupe à faire des recommandations, en m'appuyant sur leur expertise",
+      "question": 32,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 115,
+    "fields": {
+      "choice_text": "Je dirige le groupe fermement. et prends pour eux les décisions nécessaires",
+      "question": 32,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 116,
+    "fields": {
+      "choice_text": "Je donne mes idées sur les changements et fais en sorte d'obtenir des recommandations de leur part sur ces idées",
+      "question": 32,
+      "categorie": 24,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 117,
+    "fields": {
+      "choice_text": "Je le laisse proposer ses propres methodes, et nous en discutons ensemble",
+      "question": 33,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 118,
+    "fields": {
+      "choice_text": "Je fais passer mes methodes, et m'assure de leur bonne application par mon collaborateur",
+      "question": 33,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 119,
+    "fields": {
+      "choice_text": "Je le laisse définir ses propres méthodes",
+      "question": 33,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 120,
+    "fields": {
+      "choice_text": "Je pose mes méthodes comme base de réflexion, et nous en discutons ensemble",
+      "question": 33,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 121,
+    "fields": {
+      "choice_text": "Je prends les mésures nécessaires pour l'amener à travailler dans ma ligne de travail bien définie",
+      "question": 34,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 122,
+    "fields": {
+      "choice_text": "Je lui permets de participer à certaines décisions, et j'encourage ses initiatives au sein de ma methode",
+      "question": 34,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 123,
+    "fields": {
+      "choice_text": "Je discute avec lui de ses résultats passés, et lui demande de faire des suggestions d'amelioration des methodes actuelles de travail",
+      "question": 34,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 124,
+    "fields": {
+      "choice_text": "Je le laisse continuer à travailler avec ses méthodes propres",
+      "question": 34,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 125,
+    "fields": {
+      "choice_text": "Je le dirige vers une methode de travail et examine avec lui les alternatives",
+      "question": 42,
+      "categorie": 24,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 126,
+    "fields": {
+      "choice_text": "Je lui donne l'opportinuité de définir sa propre méthode de travail",
+      "question": 42,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 127,
+    "fields": {
+      "choice_text": "J'interviens rapidement pour lui donner la marche à suivre",
+      "question": 42,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 128,
+    "fields": {
+      "choice_text": "Je me montre disponible pour écouter ses suggestions quant à ses idées de méthode de travail",
+      "question": 42,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 129,
+    "fields": {
+      "choice_text": "Je lui fais part de mon souci quant à sa performance, et lui demande de faire un effort pour redresser la situation",
+      "question": 43,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 130,
+    "fields": {
+      "choice_text": "Je lui rédefinis clairement les objectifs, lui donne la marche à suivre et le suis de très près",
+      "question": 43,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 131,
+    "fields": {
+      "choice_text": "Je lui rappelle les tendances de sa performance et lui suggère une certaine méthode pour redresser la situation, tout en sollicitant ses idées pour la réalisation pratique de cette méthode",
+      "question": 43,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 132,
+    "fields": {
+      "choice_text": "Je partage avec mes soucis quant à sa performance et lui demande de me proposer un mode d'action pour redresser la situation",
+      "question": 43,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 133,
+    "fields": {
+      "choice_text": "Je lui demande comment il compte aborder le suivi des commandes et lui fait part de mon appui s'il a besoin d'aide",
+      "question": 44,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 134,
+    "fields": {
+      "choice_text": "Je lui montre comment faire le suivi des commandes et m'assure qu'il le met bien en oeuvre",
+      "question": 44,
+      "categorie": 23,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 135,
+    "fields": {
+      "choice_text": "Je suis intéressé par la façon dont il va aborder le suivi des commandes et le laisse faire",
+      "question": 44,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 136,
+    "fields": {
+      "choice_text": "Je lui suggère une methode de suivi des commandes et sollicite toute suggestion qu'il peut avoir quant à la mise en oeuvre de cette méthode",
+      "question": 44,
+      "categorie": 22,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 137,
+    "fields": {
+      "choice_text": "Expert",
+      "question": 53,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 138,
+    "fields": {
+      "choice_text": "Coopératif",
+      "question": 53,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 139,
+    "fields": {
+      "choice_text": "spontané",
+      "question": 53,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 140,
+    "fields": {
+      "choice_text": "pragmatique",
+      "question": 53,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 144,
+    "fields": {
+      "choice_text": "Compétent",
+      "question": 85,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 145,
+    "fields": {
+      "choice_text": "Soutien",
+      "question": 85,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 146,
+    "fields": {
+      "choice_text": "Créatif",
+      "question": 85,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 147,
+    "fields": {
+      "choice_text": "Décisionnaire",
+      "question": 85,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 148,
+    "fields": {
+      "choice_text": "Solide",
+      "question": 86,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 149,
+    "fields": {
+      "choice_text": "Diplômate",
+      "question": 86,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 150,
+    "fields": {
+      "choice_text": "Aime s'amuser",
+      "question": 86,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 151,
+    "fields": {
+      "choice_text": "Orienté tâche",
+      "question": 86,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 152,
+    "fields": {
+      "choice_text": "Spécialiste",
+      "question": 87,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 153,
+    "fields": {
+      "choice_text": "Fidèle",
+      "question": 87,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 154,
+    "fields": {
+      "choice_text": "Enthousiaste",
+      "question": 87,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 155,
+    "fields": {
+      "choice_text": "Efficace",
+      "question": 87,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 156,
+    "fields": {
+      "choice_text": "Rationnel",
+      "question": 88,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 157,
+    "fields": {
+      "choice_text": "Loyal",
+      "question": 88,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 158,
+    "fields": {
+      "choice_text": "Extraverti",
+      "question": 88,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 159,
+    "fields": {
+      "choice_text": "Compétitif",
+      "question": 88,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 160,
+    "fields": {
+      "choice_text": "Sûr",
+      "question": 89,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 161,
+    "fields": {
+      "choice_text": "Sensible",
+      "question": 89,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 162,
+    "fields": {
+      "choice_text": "Persuasif",
+      "question": 89,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 163,
+    "fields": {
+      "choice_text": "Rapide",
+      "question": 89,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 164,
+    "fields": {
+      "choice_text": "Précis",
+      "question": 90,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 165,
+    "fields": {
+      "choice_text": "Amical",
+      "question": 90,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 166,
+    "fields": {
+      "choice_text": "Vif",
+      "question": 90,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 167,
+    "fields": {
+      "choice_text": "Sans émotion",
+      "question": 90,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 168,
+    "fields": {
+      "choice_text": "minutieux",
+      "question": 91,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 169,
+    "fields": {
+      "choice_text": "Facile à vivre",
+      "question": 91,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 170,
+    "fields": {
+      "choice_text": "Intuitif",
+      "question": 91,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 171,
+    "fields": {
+      "choice_text": "Indépenpant",
+      "question": 91,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 172,
+    "fields": {
+      "choice_text": "Intellectuel",
+      "question": 92,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 173,
+    "fields": {
+      "choice_text": "Emu",
+      "question": 92,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 174,
+    "fields": {
+      "choice_text": "Impulsif",
+      "question": 92,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 175,
+    "fields": {
+      "choice_text": "Tranché",
+      "question": 92,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 176,
+    "fields": {
+      "choice_text": "Sérieux",
+      "question": 93,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 177,
+    "fields": {
+      "choice_text": "Médiateur",
+      "question": 93,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 178,
+    "fields": {
+      "choice_text": "Energique",
+      "question": 93,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 179,
+    "fields": {
+      "choice_text": "Autoritaire",
+      "question": 93,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 180,
+    "fields": {
+      "choice_text": "Systématique",
+      "question": 94,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 181,
+    "fields": {
+      "choice_text": "Patient",
+      "question": 94,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 182,
+    "fields": {
+      "choice_text": "Stimulant",
+      "question": 94,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 183,
+    "fields": {
+      "choice_text": "Agissant",
+      "question": 94,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 184,
+    "fields": {
+      "choice_text": "Organisé",
+      "question": 95,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 185,
+    "fields": {
+      "choice_text": "A du tact",
+      "question": 95,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 186,
+    "fields": {
+      "choice_text": "Charismatique",
+      "question": 95,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 187,
+    "fields": {
+      "choice_text": "Aime le risque",
+      "question": 95,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 188,
+    "fields": {
+      "choice_text": "Logique",
+      "question": 96,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 189,
+    "fields": {
+      "choice_text": "Sociable",
+      "question": 96,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 190,
+    "fields": {
+      "choice_text": "Libéré",
+      "question": 96,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 191,
+    "fields": {
+      "choice_text": "S'affirme",
+      "question": 96,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 192,
+    "fields": {
+      "choice_text": "Orienté detail",
+      "question": 97,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 193,
+    "fields": {
+      "choice_text": "Calme",
+      "question": 97,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 194,
+    "fields": {
+      "choice_text": "Démonstratif",
+      "question": 97,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 195,
+    "fields": {
+      "choice_text": "Orienté objectif",
+      "question": 97,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 196,
+    "fields": {
+      "choice_text": "Technicien",
+      "question": 98,
+      "categorie": 26,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 197,
+    "fields": {
+      "choice_text": "Agréable",
+      "question": 98,
+      "categorie": 27,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 198,
+    "fields": {
+      "choice_text": "Passionnant",
+      "question": 98,
+      "categorie": 28,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 199,
+    "fields": {
+      "choice_text": "Dominant",
+      "question": 98,
+      "categorie": 29,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 200,
+    "fields": {
+      "choice_text": "A. Je justifie mon comportement de maniere très rationnelle, de façon à me protéger des critiques éventuelles",
+      "question": 1,
+      "categorie": 34,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 201,
+    "fields": {
+      "choice_text": "B. J'essaie de persuader les autres, et n'hésite pas à faire pression sur eux",
+      "question": 1,
+      "categorie": 33,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 202,
+    "fields": {
+      "choice_text": "C. J'aide les autres et utilise ma sympathie pour me faire accepter",
+      "question": 1,
+      "categorie": 35,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 203,
+    "fields": {
+      "choice_text": "D. Je propose des opportinuités de développement et recherche le consensus",
+      "question": 1,
+      "categorie": 32,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 204,
+    "fields": {
+      "choice_text": "A. J'essaie de reporter le traitement des problèmes quand ils sont trop importants",
+      "question": 35,
+      "categorie": 34,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 205,
+    "fields": {
+      "choice_text": "B. J'equilibre mon intérêt pour l'accomplissement de la tâche, et celui pour la satisfaction des personnes",
+      "question": 35,
+      "categorie": 32,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 206,
+    "fields": {
+      "choice_text": "C. Atteindre le resultat est mon seul objectif",
+      "question": 35,
+      "categorie": 33,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 207,
+    "fields": {
+      "choice_text": "D. Je fais en sorte que chaqu'un soit satisfait",
+      "question": 35,
+      "categorie": 35,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 208,
+    "fields": {
+      "choice_text": "A. Les règles sont les règles, c'est tout. ça ne m'intéresse pas",
+      "question": 36,
+      "categorie": 34,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 209,
+    "fields": {
+      "choice_text": "B. Les règles sont necessaires, et je pousse les autres à les suivre",
+      "question": 36,
+      "categorie": 33,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 210,
+    "fields": {
+      "choice_text": "C. Les règles sont des guides; elles sont utiles mais nous n'avons pas à en être prisonniers",
+      "question": 36,
+      "categorie": 32,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 211,
+    "fields": {
+      "choice_text": "D. Je pense qu'on doit s'efforcer de suivre les règles",
+      "question": 36,
+      "categorie": 35,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 212,
+    "fields": {
+      "choice_text": "A. Les conflits peuvent être une source de progrès",
+      "question": 37,
+      "categorie": 32,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 213,
+    "fields": {
+      "choice_text": "B. Je n'aime pas les conflits; cela nuit aux relations",
+      "question": 37,
+      "categorie": 35,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 214,
+    "fields": {
+      "choice_text": "C. Le travail reste prioritaire, et je n'hésite pas à aller au conflit, si la tâche me paraît menacée",
+      "question": 37,
+      "categorie": 33,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 215,
+    "fields": {
+      "choice_text": "D. Les conflits sont nécessaires",
+      "question": 37,
+      "categorie": 34,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 216,
+    "fields": {
+      "choice_text": "A. Je n'aime pas affronter des gens en colère; ça m'est pénible",
+      "question": 38,
+      "categorie": 35,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 217,
+    "fields": {
+      "choice_text": "B. La colère de l'autre me rend méfiant et m'éloigne",
+      "question": 38,
+      "categorie": 34,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 218,
+    "fields": {
+      "choice_text": "C. En cas de colère de l'autre, je provoque une discussion",
+      "question": 38,
+      "categorie": 32,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 219,
+    "fields": {
+      "choice_text": "D. La colère de l'autre me met moi-même de mauvaise humeur",
+      "question": 38,
+      "categorie": 33,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 220,
+    "fields": {
+      "choice_text": "A. J'essaie d'utiliser ses points faibles pour arriver à mes fins",
+      "question": 39,
+      "categorie": 34,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 221,
+    "fields": {
+      "choice_text": "B. Je fais de mon mieux et espère être apprécié",
+      "question": 39,
+      "categorie": 35,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 222,
+    "fields": {
+      "choice_text": "C. J'attends qu'il s'occupe de ses affaires et me laisse m'occuper des miennes",
+      "question": 39,
+      "categorie": 33,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 223,
+    "fields": {
+      "choice_text": "D. Je discute, j'échange, je négocie",
+      "question": 39,
+      "categorie": 32,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 224,
+    "fields": {
+      "choice_text": "A. Les gens rient facilement à mes dépens",
+      "question": 40,
+      "categorie": 35,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 225,
+    "fields": {
+      "choice_text": "B. J'aime l'humour dérisoire et cynique",
+      "question": 40,
+      "categorie": 34,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 226,
+    "fields": {
+      "choice_text": "C. Je sais trouver le mot qui détend l'autre",
+      "question": 40,
+      "categorie": 32,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 227,
+    "fields": {
+      "choice_text": "D. J'aime l'humour mordant",
+      "question": 40,
+      "categorie": 33,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 228,
+    "fields": {
+      "choice_text": "A. Je dis à l'autre ce qu'il doit faire et comment le faire, même quand ce n'est pas totalement nécessaire",
+      "question": 83,
+      "categorie": 33,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 229,
+    "fields": {
+      "choice_text": "B. Je vais de l'avant avec l'autre",
+      "question": 83,
+      "categorie": 32,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 230,
+    "fields": {
+      "choice_text": "C. J'ai une attitude de suiveur",
+      "question": 83,
+      "categorie": 35,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 231,
+    "fields": {
+      "choice_text": "D. Je préfère attendre que ça se passe",
+      "question": 83,
+      "categorie": 34,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 232,
+    "fields": {
+      "choice_text": "A. Il devrait comprendre qu'en tant que membre de l'entreprise, il devrait se montrer plus constructif",
+      "question": 46,
+      "categorie": 39,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 233,
+    "fields": {
+      "choice_text": "B. Il doit avoir des problèmes personnels",
+      "question": 46,
+      "categorie": 38,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 234,
+    "fields": {
+      "choice_text": "C. Il exprime peut être ce que les autres pensent sans oser le dire",
+      "question": 46,
+      "categorie": 42,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 235,
+    "fields": {
+      "choice_text": "D. Il y a toujours un constataire dans un groupe, il faut savoir s'en accommoder",
+      "question": 46,
+      "categorie": 40,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 236,
+    "fields": {
+      "choice_text": "E. Il exprime des états d'ae devant une décision qui s'impose pour le bien de l'entreprise",
+      "question": 46,
+      "categorie": 41,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 237,
+    "fields": {
+      "choice_text": "A. Je pense que cette référence à la lutte des classes est complètement dépassée à l'heure du e-business",
+      "question": 47,
+      "categorie": 41,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 238,
+    "fields": {
+      "choice_text": "B. Je pense qu'il devrait vivre en Corée du Nord ou à Cuba pour comparer les 2 systèmes",
+      "question": 47,
+      "categorie": 39,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 239,
+    "fields": {
+      "choice_text": "C. Il se laisse souvent emporter par des tirades intempestives",
+      "question": 47,
+      "categorie": 38,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 240,
+    "fields": {
+      "choice_text": "D. Il a reçu des consignes de son syndicat",
+      "question": 47,
+      "categorie": 40,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 241,
+    "fields": {
+      "choice_text": "E. Je vais lui dire que si, pour lui, se préoccuper de la croissance de l'entreprise, c'est être un valet du capital, j'en suis un",
+      "question": 47,
+      "categorie": 42,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 242,
+    "fields": {
+      "choice_text": "A. La resistance au changement m'indique que le changement est en train de se réaliser",
+      "question": 48,
+      "categorie": 42,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 243,
+    "fields": {
+      "choice_text": "B. Des professionnels ne devraient pas resister au changement",
+      "question": 48,
+      "categorie": 39,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 244,
+    "fields": {
+      "choice_text": "C. Dans de nombreuses entreprises, les collaborateurs résistent aux changements",
+      "question": 48,
+      "categorie": 40,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 245,
+    "fields": {
+      "choice_text": "D. Nous n'avons pas su trouver d'explications rationnelles suffisantes pour les convaincre",
+      "question": 48,
+      "categorie": 41,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 246,
+    "fields": {
+      "choice_text": "E. Ils ont peur du changement, et tiennent à conserver leur routine",
+      "question": 48,
+      "categorie": 38,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 247,
+    "fields": {
+      "choice_text": "A. Les managers de proximité ne remplissent pas correctement leur rôle. Je vais organiser un séminaire de management",
+      "question": 49,
+      "categorie": 39,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 248,
+    "fields": {
+      "choice_text": "B. Après avoir demandé beaucoup au personnel, il est fatal qu'il se relâche. Ces phénomènes se répètent régulièrement",
+      "question": 49,
+      "categorie": 40,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 249,
+    "fields": {
+      "choice_text": "C. Sont ce les signes annonciateurs de griefs non exprimés directement?",
+      "question": 49,
+      "categorie": 42,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 250,
+    "fields": {
+      "choice_text": "D. Nous allons organiser un plan d'action pour faire baisser ces differents facteurs",
+      "question": 49,
+      "categorie": 41,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 251,
+    "fields": {
+      "choice_text": "E. Le personnel est dans une phase régressive",
+      "question": 49,
+      "categorie": 38,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 252,
+    "fields": {
+      "choice_text": "A. Je vis une periode de stress",
+      "question": 50,
+      "categorie": 38,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 253,
+    "fields": {
+      "choice_text": "B. Nous sommes dans une société dans laquelle ce sont les managers qui portent tout sur leurs épaules",
+      "question": 50,
+      "categorie": 39,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 254,
+    "fields": {
+      "choice_text": "C. Une trajectoire professionnelle devrait alterner les périodes d'expertise sur le terrain et les périodes de mangement",
+      "question": 50,
+      "categorie": 41,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 255,
+    "fields": {
+      "choice_text": "D. Dans la vie, il ya des hauts et des bas. Pour le moment, je suis dans le creux de la vague",
+      "question": 50,
+      "categorie": 40,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 256,
+    "fields": {
+      "choice_text": "E. Et si je prenais soin de moi tout en excerçant mes responsabilités de management?",
+      "question": 50,
+      "categorie": 42,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 257,
+    "fields": {
+      "choice_text": "A. Elle ne se rend pas compte des responsabilités importantes qui sont les miennes",
+      "question": 51,
+      "categorie": 41,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 258,
+    "fields": {
+      "choice_text": "B. Elle est jalouse de ma vie professionnelle très motivante",
+      "question": 51,
+      "categorie": 38,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 259,
+    "fields": {
+      "choice_text": "C. Je vais lui proposer de passer ensemble, en amoureux, un week-end prolongé pour atténuer son courroux",
+      "question": 51,
+      "categorie": 40,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 260,
+    "fields": {
+      "choice_text": "D. Je vais refaire un point sur mes priorités de vie",
+      "question": 51,
+      "categorie": 42,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 261,
+    "fields": {
+      "choice_text": "E. Elle n'a qu'à se trouver des activités intéressantes!!",
+      "question": 51,
+      "categorie": 39,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 262,
+    "fields": {
+      "choice_text": "A. Cela prouve qu'il est dangereux d'avoir des clients qui pèsent plus de 10% du chiffres d'Affaires",
+      "question": 52,
+      "categorie": 41,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 263,
+    "fields": {
+      "choice_text": "B. Maintenant que nous sommes sous le coup de cette perte, qu'est ce que cela nous apprend pour l'avenir ?",
+      "question": 52,
+      "categorie": 42,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 264,
+    "fields": {
+      "choice_text": "C. Il aurait pu nous prévenir, au lien de nous mettre devant le fait accompli",
+      "question": 52,
+      "categorie": 39,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 265,
+    "fields": {
+      "choice_text": "D. Un de perdu, dix de retrouvés!! en plus, celui là avait des exigences exorbitantes!!",
+      "question": 52,
+      "categorie": 40,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.choice",
+    "pk": 266,
+    "fields": {
+      "choice_text": "E. Les commerciaux sont passionnés par la conquête, et n'aiment pas mener des actions de fidélisation",
+      "question": 52,
+      "categorie": 38,
+      "valorisation": "0"
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 1,
+    "fields": {
+      "question_text": "1. Leadership",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 27,
+    "fields": {
+      "question_text": "1. Mon collaborateur a tendance à agir seul, à l'écart de l'equipe; d'autre part ce qu'il accomplit seul ne donne pas de bons résultats.",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 28,
+    "fields": {
+      "question_text": "2. Je suis toujours de près le travail de mon collaborateur, en lui donnant les directives nécessaires à la réalisation de ses taches; il a à resoudre un probleme qu'il n'a pas encore rencontré.",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 29,
+    "fields": {
+      "question_text": "4. J'envisage de faire des champements dans l'organisation du travail de mon équipe, mon collaborateur a fait des suggestions pertinentes à propos de ces changements, et a montré sa capacité d'adaptation",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 30,
+    "fields": {
+      "question_text": "3. Mon collaborateur doit résoudre seul un problème, il dit ne pas s'en sentir capable, alors qu'il a déjà montré par le passé qu'il savait le faire.",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 31,
+    "fields": {
+      "question_text": "5. La performance de mon collaborateur est bonne, mais il semble un peu incertain sur la marche à suivre dans la résolution d'un problème",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 32,
+    "fields": {
+      "question_text": "6. Je suis à la tête d'un groupe chargé de faire des recommandations de changement; le groupe n'est pas très impliqué, l'absentéisme est élevé et les réunions s'eternisent sans but précis; de plus, le groupe ne semble pas avoir les capacités pour faire de bonnes recommandations",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 33,
+    "fields": {
+      "question_text": "7. Mon collaborateur, qui est en général capable de prendre ses responsabilités, ne veut pas prendre part à ma récente action de redéfinition des methodes de travail",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 34,
+    "fields": {
+      "question_text": "8. Je prends une nouvelle fonction ; mon prédécesseur laissait une grande liberté à l'un de ses collaborateurs, qui a dévéloppé ses propres méthodes à toujours correctement fait son travail",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 35,
+    "fields": {
+      "question_text": "2. Résolution de problèmes",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 36,
+    "fields": {
+      "question_text": "3. Règles",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 37,
+    "fields": {
+      "question_text": "4. Conflits",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 38,
+    "fields": {
+      "question_text": "5. Colère",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 39,
+    "fields": {
+      "question_text": "6. Avec mon patron",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 40,
+    "fields": {
+      "question_text": "7. Humour",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 42,
+    "fields": {
+      "question_text": "9. Dans cette même nouvelle fonction, je decouvre que mon predecesseur laissait en fait une grande liberté à tous ses collaborateurs; l'un d'entre eux, recemment embauché et intéressé par sa nouvelle fonction, semble perflexe sur la marche à suivre",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 43,
+    "fields": {
+      "question_text": "10. La performance de mon collaborateur a baissé au cours des derniers mois, et il a de plus en plus de mal à tenir les délais lorsque les données du probleme sont nouvelles; de plus, il a l'air de ne pas etre concerné par ce dérapage",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 44,
+    "fields": {
+      "question_text": "11. Mon collaborateur a une bonne formation universitaire mais il est jeune dans sons poste; il doit prendre en main le suivi des commandes; il est content de prendre cette nouvelle responsabilité",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 45,
+    "fields": {
+      "question_text": "12. Un travail important doit etre fait au sein de mon département et c'est à mon collaborateur de s'en charger, il s'est toujours montré à la hauteur de sa tâche et semble avoir bien saisi le problème actuel",
+      "formulaire": 41
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 46,
+    "fields": {
+      "question_text": "1. Dans l'équipe, quelqu'un discute et conteste régulierement les décisions. C'est toujours la même personne.",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 47,
+    "fields": {
+      "question_text": "2. Un délégué syndical me traite de <<valet du capital !> pendant une réunion du CE>>",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 48,
+    "fields": {
+      "question_text": "3. Pour faire face aux exigences accrues des clients, je souhaite mettre en place de nouvelles méthodes de travail. J'ai l'impression que certains de mes collaborateurs résistent",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 49,
+    "fields": {
+      "question_text": "4. Le taux d'absentéisme, le taux d'accidents de travail et le nombre d'incidents qualité augmentent depuis 6 mois",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 50,
+    "fields": {
+      "question_text": "5. Il m'arrive parfois d'avoir envie de retourner sur le terrain et d'abandonner l'exercice des responsabilités managériales. Trop de stress, trop de temps à régler les problemes des autres, et trop de complexité!!",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 51,
+    "fields": {
+      "question_text": "6. Ma femme me reproche de rentrer tard et de travailler régulièrement les fins de semaine sur des dossiers professionnels",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 52,
+    "fields": {
+      "question_text": "7. Nous venons de perdre un client qui representait 15% de notre chiffre d'affaires",
+      "formulaire": 42
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 53,
+    "fields": {
+      "question_text": "1. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 83,
+    "fields": {
+      "question_text": "8. Action",
+      "formulaire": 6
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 85,
+    "fields": {
+      "question_text": "2. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 86,
+    "fields": {
+      "question_text": "3. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 87,
+    "fields": {
+      "question_text": "4. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 88,
+    "fields": {
+      "question_text": "5. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 89,
+    "fields": {
+      "question_text": "6. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 90,
+    "fields": {
+      "question_text": "7. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 91,
+    "fields": {
+      "question_text": "8. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 92,
+    "fields": {
+      "question_text": "9. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 93,
+    "fields": {
+      "question_text": "10. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 94,
+    "fields": {
+      "question_text": "11. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 95,
+    "fields": {
+      "question_text": "12. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 96,
+    "fields": {
+      "question_text": "13. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 97,
+    "fields": {
+      "question_text": "14. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  },
+  {
+    "model": "evaluations.question",
+    "pk": 98,
+    "fields": {
+      "question_text": "15. Répartissez les 10 points entre les choix :",
+      "formulaire": 43
+    }
+  }
+]
