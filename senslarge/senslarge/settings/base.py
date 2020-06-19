@@ -106,20 +106,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
-# Pour l'envoie des mails en django
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_HOST_USER = (
-    'postmaster@sandbox714bbe55d5ec42c3adff6a7eefb6037c.mailgun.org'
-)
-EMAIL_HOST_PASSWORD = '40bd26688a7b226cfa12c08bb4b87bba-4a62b8e8-e61251a1'
-EMAIL_PORT = 587
-
-DEFAULT_FROM_EMAIL = 'hamousma2@yahoo.fr'
-
-WEASYPRINT_BASEURL = 'http://localhost:8000'
-
 # Health Checks
 HEALTH_CHECKS = {
     'db': 'django_healthchecks.contrib.check_database',
