@@ -8,7 +8,7 @@ attrs==17.4.0
 
             # via pytest
 cairocffi==0.8.0          # via cairosvg, weasyprint
-cairosvg==2.1.3           # via weasyprint
+cairosvg==2.5.1           # via weasyprint
 cffi==1.11.5              # via cairocffi, weasyprint
 chardet==3.0.4            # via requests
 coverage==4.5.1           # via pytest-cov
