@@ -61,7 +61,7 @@ pytest-factoryboy==2.0.1
 pytest==3.5.0
 python-dateutil==2.7.2    # via faker
 pytz==2018.4              # via django
-pyyaml==3.12              # via django-fontawesome
+pyyaml==5.4              # via django-fontawesome
 raven==6.7.0
 redis==2.10.6             # via django-redis
 requests==2.18.4          # via django-healthchecks, django-mailgun
