@@ -68,6 +68,6 @@ requests==2.18.4          # via django-healthchecks, django-mailgun
 six==1.11.0               # via diff-cover, django-healthchecks, django-mailgun, faker, html5lib, more-itertools, pytest, python-dateutil
 text-unidecode==1.2       # via faker
 tinycss2==0.6.1           # via cairosvg, cssselect2, weasyprint
-urllib3==1.22             # via requests
+urllib3==1.26.5             # via requests
 weasyprint==0.42.3        # via django-weasyprint
 webencodings==0.5.1       # via html5lib, tinycss2
