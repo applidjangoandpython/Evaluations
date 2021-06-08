@@ -44,7 +44,7 @@ markupsafe==1.0           # via jinja2
 mccabe==0.6.1             # via flake8
 more-itertools==4.1.0     # via pytest
 pdfrw==0.4                # via weasyprint
-pillow==5.1.0             # via cairosvg
+pillow==8.2.0             # via cairosvg
 pluggy==0.6.0             # via pytest
 psycopg2==2.7.4
 py==1.5.3                 # via pytest
