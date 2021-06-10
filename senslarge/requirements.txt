@@ -28,7 +28,7 @@ django-weasyprint==0.5.2
 
 
 
-django==2.0.4             # via django-healthchecks, django-redis, django-weasyprint
+django==2.2.24             # via django-healthchecks, django-redis, django-weasyprint
 djangorestframework==3.8.2
 factory-boy==2.10.0
 faker==0.8.13             # via factory-boy
