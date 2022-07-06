@@ -39,7 +39,7 @@ inflect==0.2.5            # via jinja2-pluralize
 inflection==0.3.1         # via pytest-factoryboy
 jinja2-pluralize==0.3.0   # via diff-cover
 jinja2==2.10              # via diff-cover, jinja2-pluralize
-lxml==4.2.1               # via pyquery
+lxml==4.9.1               # via pyquery
 markupsafe==1.0           # via jinja2
 mccabe==0.6.1             # via flake8
 more-itertools==4.1.0     # via pytest
